@@ -3,14 +3,14 @@
 #include <string>
 #include <vector>
 #include <cmath> //Para el exponente en la parte d)
-#include <iomanip> //PREGUNTAR PARA QUE SIRVE
+#include <iomanip> 
 
 /*
-Promt utilizado para la funcion Leer fasta: Estoy haciendo un proyecto en C++. Necesito una función que lea un archivo FASTA con secuencias de ADN.
+Prompt utilizado para la funcion Leer fasta: Estoy haciendo un proyecto en C++. Necesito una función que lea un archivo FASTA con secuencias de ADN.
 Cada secuencia empieza con una línea que tiene > y el nombre, y después vienen las letras en una o varias líneas.
 Quiero guardar el nombre y la secuencia completa de cada una en un vector.
 */
-using namespace std;//esta es para no tener que escribir std::, lo de la mañana
+using namespace std;//esta es para no tener que escribir std::
 //esta es la parte para que se pueda ingresar el archivo
 struct DNASequence {
     string id;
@@ -272,7 +272,7 @@ void topNKmers(HashTableKmer& tabla, int n) {
 }
 
 /*
-Promt utilizado: Estoy haciendo un proyecto de C++. Necesito construir la matriz de adyacencia ponderada de los 2-mers de una secuencia,
+Prompt utilizado: Estoy haciendo un proyecto de C++. Necesito construir la matriz de adyacencia ponderada de los 2-mers de una secuencia,
 siguiendo el algoritmo de Khan et al. (2024): dividir la secuencia en pares de nucleótidos y, para cada pareja de posiciones i < j,
 crear una arista dirigida del par i al par j con peso 1/(j − i)^β. Por ejemplo, con la cadena TCATTAGCAGTTAGCAGC y β = 1,
  el peso de TC a AT debe ser 1 y el de AT a CA debe ser 0,16667.
@@ -336,7 +336,7 @@ void matrizAdyacencia(string secuencia, double beta) {
 }
 
 /*
-Este PROMT lo pongo aunque no me dio el codigo, me dio la idea de como hacer esta parte
+Este PROMPT lo pongo aunque no me dio el codigo, me dio la idea de como hacer esta parte
 Estoy haciendo un proyecto en C++ con varias funciones: cargar un archivo FASTA,
 buscar una secuencia por su ID y contar k-mers. Todavía no tengo interfaz.
 ¿Cómo puedo probar estas funciones de forma sencilla desde la consola?
